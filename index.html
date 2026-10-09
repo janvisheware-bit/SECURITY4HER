@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101124">
+  <title>SECURITY4HER | Your Safety, Your Power</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="SECURITY4HER home">
+      <span class="brand-icon">✦</span>
+      <span>SECURITY<span class="pink">4HER</span></span>
+    </a>
+    <span class="prototype-label">SAFETY PROTOTYPE</span>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR SAFETY. YOUR POWER.</p>
+        <h1>You deserve to feel <span class="pink">safe.</span></h1>
+        <p class="hero-description">
+          Your personal safety companion for check-ins, emergency preparation,
+          evidence selection, and digital safety awareness.
+        </p>
+        <button class="button button-primary hero-button" id="panicButton">
+          <span aria-hidden="true">🚨</span> PANIC ALERT
+        </button>
+        <p class="small-note">Demo only · No automatic emergency alerts are sent</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="shield">♡</div>
+        <span class="spark spark-one">✦</span>
+        <span class="spark spark-two">✧</span>
+        <span class="spark spark-three">✦</span>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featuresHeading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR PERSONAL SAFETY TOOLKIT</p>
+          <h2 id="featuresHeading">Safety at your fingertips</h2>
+        </div>
+        <span class="section-count">06 MODULES</span>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon pink-bg">⏱️</div>
+          <h3>Smart Check-In</h3>
+          <p>Start a timer and check in when you reach your destination.</p>
+          <button class="button button-outline" data-feature="checkin">Open Check-In <span>→</span></button>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon purple-bg">📍</div>
+          <h3>Share Location</h3>
+          <p>Request your current location and open it on a map.</p>
+          <button class="button button-outline" data-feature="location">Get Location <span>→</span></button>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon blue-bg">📷</div>
+          <h3>Evidence Capture</h3>
+          <p>Select files you may want to document for later review.</p>
+          <button class="button button-outline" data-feature="evidence">Select Evidence <span>→</span></button>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon green-bg">📞</div>
+          <h3>Emergency Contacts</h3>
+          <p>Keep trusted contact names and phone numbers in this browser.</p>
+          <button class="button button-outline" data-feature="contacts">Manage Contacts <span>→</span></button>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon orange-bg">🛡️</div>
+          <h3>Safety Guide</h3>
+          <p>Review practical physical and digital safety reminders.</p>
+          <button class="button button-outline" data-feature="guide">Read Guide <span>→</span></button>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon pink-bg">🔐</div>
+          <h3>Privacy Layer</h3>
+          <p>Learn what this prototype stores and clear saved contacts.</p>
+          <button class="button button-outline" data-feature="privacy">Privacy Settings <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="flow-section">
+      <p class="eyebrow">HOW SECURITY4HER WORKS</p>
+      <h2>Prevent. Respond. Document. Protect.</h2>
+      <div class="flow-grid">
+        <div class="flow-step"><span>01</span><strong>PREVENT</strong><p>Plan ahead with check-ins.</p></div>
+        <div class="flow-step"><span>02</span><strong>RESPOND</strong><p>Find emergency options.</p></div>
+        <div class="flow-step"><span>03</span><strong>DOCUMENT</strong><p>Select files for review.</p></div>
+        <div class="flow-step"><span>04</span><strong>PROTECT</strong><p>Understand privacy limits.</p></div>
+      </div>
+    </section>
+
+    <section class="disclaimer">
+      <span aria-hidden="true">ⓘ</span>
+      <p><strong>Prototype notice:</strong> This is a front-end demonstration. It does not automatically alert police or contacts, continuously monitor your safety, send your location to others, or securely upload evidence. Do not rely on it as your only safety measure.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#home">✦ SECURITY<span class="pink">4HER</span></a>
+    <p>Designed with care. Built around safety and privacy awareness.</p>
+    <p class="footer-small">Student project prototype · Version 1.0</p>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true"
+      aria-labelledby="modalTitle" aria-describedby="modalDescription">
+      <div class="modal-header">
+        <h2 id="modalTitle">SECURITY4HER</h2>
+        <button class="close-button" id="closeModal" aria-label="Close dialog">×</button>
+      </div>
+      <div class="modal-content" id="modalContent"></div>
+    </section>
+  </div>
+</body>
+</html>
